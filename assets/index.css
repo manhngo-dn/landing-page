@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: #f5f5f5;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  #home,
+  #about,
+  #pricingWrapper,
+  #testimonials,
+  #download {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  #home,
+  #about,
+  #pricingWrapper,
+  #testimonials,
+  #download {
+    padding: 2rem;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}
+
+/* NAVBAR */
+.navigationWrapper {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  z-index: 999;
+}
+.navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* HOME */
+#home {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeContentLeft {
+  padding: 10rem 0 6rem 40px;
+  color: #f5f5f5;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  margin-bottom: 2.4rem;
+  color: #8c8c8c;
+}
+
+.slogan {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.homeImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* ABOUT */
+#about {
+  transition: opacity 1.5s linear;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.aboutHeading {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+
+  transition: 0.5s linear;
+}
+
+.aboutIntro {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #52c41a;
+
+  transition: 0.5s linear;
+}
+
+.aboutContent {
+  padding: 2rem 0;
+}
+
+.aboutElementIcon {
+  margin-bottom: 1rem;
+}
+
+.aboutElementTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.aboutElementcontent {
+  color: #8c8c8c;
+}
+
+.aboutApp {
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+.aboutAppHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.aboutStep {
+  padding: 0 2rem 2rem 4rem;
+  position: relative;
+  border-left: 1px solid #f5f5f5;
+}
+
+.stepNumber {
+  position: absolute;
+  top: -1rem;
+  left: -1.5rem;
+  border-radius: 50%;
+  background: #52c41a;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 3rem;
+  text-align: center;
+}
+
+.aboutBanner {
+  width: 100%;
+  height: 100%;
+}
+
+/* PRICING */
+
+#pricingWrapper {
+  transition: opacity 1.5s linear;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.pricingContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.litePlan {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.litePlanTitle {
+  color: #000;
+}
+.proPlanTitle {
+  color: #fff;
+}
+
+.planPrice {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.litePlanPrice {
+  color: #000;
+}
+.proPlanPrice {
+  color: #fff;
+}
+
+.planCycle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.litePlanCycle {
+  color: #595959;
+}
+.proPlanCycle {
+  color: #fafafa;
+}
+
+.planContent {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.litePlanContent {
+  border-bottom: 1px solid #d9d9d9;
+  color: #8c8c8c;
+}
+.proPlanContent {
+  border-bottom: 1px solid #f0f0f0;
+  color: #f5f5f5;
+}
+
+.planContentQuantity {
+  font-weight: 700;
+  color: #52c41a;
+}
+.litePlanQuantity {
+  color: #52c41a;
+}
+.proPlanQuantity {
+  color: #fff;
+}
+
+.proPlan {
+  background-color: #52c41a;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+  transition: opacity 1.5s linear;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.comment {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #595959;
+  padding-bottom: 3rem;
+}
+
+.commenterName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.commenterTitle {
+  color: #8c8c8c;
+}
+
+/* DOWNLOAD */
+#download {
+  transition: opacity 1.5s linear;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  background-color: #52c41a;
+}
+
+.downloadHeading {
+  color: #fff;
+}
+
+.downloadContent {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #1f1f1f;
+  color: #d9d9d9;
+}
